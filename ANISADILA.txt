@@ -1,0 +1,24 @@
+Start
+    Declare downpayment, car price, interest, ir
+    Output "Enter carprice"
+    Input carprice
+    While the value of A cannot less than 30000
+    aOutput "Enter downpayment"
+    Input downpayment
+    While the value of B can be zero but cannot be negative
+    Output "Enter loan"
+    Input loan period
+    While the value of C cannot be less than 5 years and cannot more than 9 years
+    Output "Enter interest"
+    Input interestrate
+    While the value of D cannot be less than 3% and cannot more than 7%
+    Output monthlyRepayment
+    Calculate totalInterest = (carprice-downpayment)*ir*loan
+    Calculate monthlyRepayment = (carprice-downpayment+totalInterest)/(loan*12)
+    Declare int year=1
+    Calculate principal = monthlyRepayment*12*year
+    Calculate ir = totalInterest/loan*year
+    Calculate balance = monthlyRepayment*12*(loan-year)
+    Print year,principal,ir,balance
+    year++
+End
